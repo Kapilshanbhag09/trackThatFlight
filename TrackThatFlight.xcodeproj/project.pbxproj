@@ -14,6 +14,21 @@
 		361B85B02B80A2BB00BA5B11 /* TrackThatFlightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361B85AF2B80A2BB00BA5B11 /* TrackThatFlightTests.swift */; };
 		361B85BA2B80A2BB00BA5B11 /* TrackThatFlightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361B85B92B80A2BB00BA5B11 /* TrackThatFlightUITests.swift */; };
 		361B85BC2B80A2BB00BA5B11 /* TrackThatFlightUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361B85BB2B80A2BB00BA5B11 /* TrackThatFlightUITestsLaunchTests.swift */; };
+		361B85CA2B80A2F900BA5B11 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361B85C92B80A2F900BA5B11 /* HomeView.swift */; };
+		361B85CD2B80A32A00BA5B11 /* SearchFlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361B85CC2B80A32A00BA5B11 /* SearchFlightView.swift */; };
+		361B85CF2B80AC9C00BA5B11 /* SearchFlightCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361B85CE2B80AC9C00BA5B11 /* SearchFlightCellView.swift */; };
+		361B85D22B80AEF700BA5B11 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361B85D12B80AEF700BA5B11 /* Color.swift */; };
+		361B85D42B80BC4C00BA5B11 /* SearchFlightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361B85D32B80BC4C00BA5B11 /* SearchFlightViewModel.swift */; };
+		361B85D62B80BC5900BA5B11 /* SearchFlightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361B85D52B80BC5900BA5B11 /* SearchFlightModel.swift */; };
+		361B85D92B80BD3300BA5B11 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361B85D82B80BD3300BA5B11 /* Request.swift */; };
+		361B85DB2B80BDD200BA5B11 /* NetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361B85DA2B80BDD200BA5B11 /* NetworkCall.swift */; };
+		361B85DD2B80BF9600BA5B11 /* SearchFlightRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361B85DC2B80BF9600BA5B11 /* SearchFlightRequest.swift */; };
+		361B85DF2B81056600BA5B11 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361B85DE2B81056600BA5B11 /* HomeViewModel.swift */; };
+		361B85E12B81058800BA5B11 /* HomeViewFlightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361B85E02B81058800BA5B11 /* HomeViewFlightModel.swift */; };
+		361B85E32B81072900BA5B11 /* HomeViewFlightRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361B85E22B81072900BA5B11 /* HomeViewFlightRequest.swift */; };
+		361B85E52B810C6A00BA5B11 /* HomeViewBottomTray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361B85E42B810C6A00BA5B11 /* HomeViewBottomTray.swift */; };
+		36CBFA372B82046A003F3619 /* MyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CBFA362B82046A003F3619 /* MyMapView.swift */; };
+		36CBFA3A2B820FCF003F3619 /* SearchFlightTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CBFA392B820FCF003F3619 /* SearchFlightTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +59,21 @@
 		361B85B52B80A2BB00BA5B11 /* TrackThatFlightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackThatFlightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		361B85B92B80A2BB00BA5B11 /* TrackThatFlightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackThatFlightUITests.swift; sourceTree = "<group>"; };
 		361B85BB2B80A2BB00BA5B11 /* TrackThatFlightUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackThatFlightUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		361B85C92B80A2F900BA5B11 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		361B85CC2B80A32A00BA5B11 /* SearchFlightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightView.swift; sourceTree = "<group>"; };
+		361B85CE2B80AC9C00BA5B11 /* SearchFlightCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightCellView.swift; sourceTree = "<group>"; };
+		361B85D12B80AEF700BA5B11 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		361B85D32B80BC4C00BA5B11 /* SearchFlightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightViewModel.swift; sourceTree = "<group>"; };
+		361B85D52B80BC5900BA5B11 /* SearchFlightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightModel.swift; sourceTree = "<group>"; };
+		361B85D82B80BD3300BA5B11 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		361B85DA2B80BDD200BA5B11 /* NetworkCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCall.swift; sourceTree = "<group>"; };
+		361B85DC2B80BF9600BA5B11 /* SearchFlightRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightRequest.swift; sourceTree = "<group>"; };
+		361B85DE2B81056600BA5B11 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		361B85E02B81058800BA5B11 /* HomeViewFlightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewFlightModel.swift; sourceTree = "<group>"; };
+		361B85E22B81072900BA5B11 /* HomeViewFlightRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewFlightRequest.swift; sourceTree = "<group>"; };
+		361B85E42B810C6A00BA5B11 /* HomeViewBottomTray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewBottomTray.swift; sourceTree = "<group>"; };
+		36CBFA362B82046A003F3619 /* MyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapView.swift; sourceTree = "<group>"; };
+		36CBFA392B820FCF003F3619 /* SearchFlightTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +124,12 @@
 		361B859D2B80A2B800BA5B11 /* TrackThatFlight */ = {
 			isa = PBXGroup;
 			children = (
+				36CBFA382B820FBE003F3619 /* Common */,
+				36CBFA352B820459003F3619 /* MapView */,
+				361B85D72B80BD2400BA5B11 /* Network */,
+				361B85D02B80AEE400BA5B11 /* Helper */,
+				361B85CB2B80A31900BA5B11 /* SearchFlight */,
+				361B85C82B80A2E500BA5B11 /* HomeView */,
 				361B859E2B80A2B800BA5B11 /* TrackThatFlightApp.swift */,
 				361B85A02B80A2B800BA5B11 /* ContentView.swift */,
 				361B85A22B80A2BA00BA5B11 /* Assets.xcassets */,
@@ -125,6 +161,63 @@
 				361B85BB2B80A2BB00BA5B11 /* TrackThatFlightUITestsLaunchTests.swift */,
 			);
 			path = TrackThatFlightUITests;
+			sourceTree = "<group>";
+		};
+		361B85C82B80A2E500BA5B11 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				361B85C92B80A2F900BA5B11 /* HomeView.swift */,
+				361B85DE2B81056600BA5B11 /* HomeViewModel.swift */,
+				361B85E02B81058800BA5B11 /* HomeViewFlightModel.swift */,
+				361B85E22B81072900BA5B11 /* HomeViewFlightRequest.swift */,
+				361B85E42B810C6A00BA5B11 /* HomeViewBottomTray.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		361B85CB2B80A31900BA5B11 /* SearchFlight */ = {
+			isa = PBXGroup;
+			children = (
+				361B85CC2B80A32A00BA5B11 /* SearchFlightView.swift */,
+				361B85CE2B80AC9C00BA5B11 /* SearchFlightCellView.swift */,
+				361B85D32B80BC4C00BA5B11 /* SearchFlightViewModel.swift */,
+				361B85D52B80BC5900BA5B11 /* SearchFlightModel.swift */,
+				361B85DC2B80BF9600BA5B11 /* SearchFlightRequest.swift */,
+			);
+			path = SearchFlight;
+			sourceTree = "<group>";
+		};
+		361B85D02B80AEE400BA5B11 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				361B85D12B80AEF700BA5B11 /* Color.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		361B85D72B80BD2400BA5B11 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				361B85D82B80BD3300BA5B11 /* Request.swift */,
+				361B85DA2B80BDD200BA5B11 /* NetworkCall.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		36CBFA352B820459003F3619 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				36CBFA362B82046A003F3619 /* MyMapView.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		36CBFA382B820FBE003F3619 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				36CBFA392B820FCF003F3619 /* SearchFlightTextField.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +350,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				361B85CD2B80A32A00BA5B11 /* SearchFlightView.swift in Sources */,
+				361B85DD2B80BF9600BA5B11 /* SearchFlightRequest.swift in Sources */,
+				361B85CA2B80A2F900BA5B11 /* HomeView.swift in Sources */,
+				361B85CF2B80AC9C00BA5B11 /* SearchFlightCellView.swift in Sources */,
 				361B85A12B80A2B800BA5B11 /* ContentView.swift in Sources */,
+				361B85E52B810C6A00BA5B11 /* HomeViewBottomTray.swift in Sources */,
+				361B85DB2B80BDD200BA5B11 /* NetworkCall.swift in Sources */,
+				361B85D42B80BC4C00BA5B11 /* SearchFlightViewModel.swift in Sources */,
+				361B85DF2B81056600BA5B11 /* HomeViewModel.swift in Sources */,
+				36CBFA372B82046A003F3619 /* MyMapView.swift in Sources */,
 				361B859F2B80A2B800BA5B11 /* TrackThatFlightApp.swift in Sources */,
+				361B85E32B81072900BA5B11 /* HomeViewFlightRequest.swift in Sources */,
+				36CBFA3A2B820FCF003F3619 /* SearchFlightTextField.swift in Sources */,
+				361B85E12B81058800BA5B11 /* HomeViewFlightModel.swift in Sources */,
+				361B85D22B80AEF700BA5B11 /* Color.swift in Sources */,
+				361B85D92B80BD3300BA5B11 /* Request.swift in Sources */,
+				361B85D62B80BC5900BA5B11 /* SearchFlightModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,11 +533,13 @@
 				DEVELOPMENT_TEAM = GFYP7LM835;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TrackThatFlight;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,11 +564,13 @@
 				DEVELOPMENT_TEAM = GFYP7LM835;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TrackThatFlight;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
