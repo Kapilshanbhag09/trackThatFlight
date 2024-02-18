@@ -24,3 +24,8 @@ struct SearchFlightDetailModel: Codable {
     var logo: String?
     var flight: String?
 }
+
+enum SearchType: String {
+    case airport
+    case live
+}
