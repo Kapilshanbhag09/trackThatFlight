@@ -33,7 +33,7 @@ struct SearchFlightTextField: View {
             Image(systemName: "magnifyingglass")
             
             TextField(text: $input) {
-                Text("Search Flight")
+                Text("Search Flight or Airports")
             }
             .focused($isTextFieldActive)
             .disabled(isTextFieldDisable)

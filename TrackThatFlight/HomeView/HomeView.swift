@@ -10,11 +10,12 @@ import MapKit
 
 struct HomeView: View {
     @State var showSearchScreen: Bool = false
+    @State var goToAirportView: Bool = false
     @State var region = MKCoordinateRegion(
         center: .init(latitude: 37.334_900,longitude: -122.009_020),
         span: .init(latitudeDelta: 1, longitudeDelta: 1)
     )
-    
+    @State var airportCode: String = ""
     
     @ObservedObject var viewModel: HomeViewModel = HomeViewModel()
     var body: some View {
@@ -37,6 +38,9 @@ struct HomeView: View {
             
             
         }
+        .navigationDestination(isPresented: $goToAirportView) {
+            AirportDetailView(airportCode: airportCode)
+        }
         .overlay() {
             VStack {
                 SearchFlightTextField(input: .constant(viewModel.flightNumber), isTextFieldDisable: true, withBorder: false) {
@@ -54,8 +58,14 @@ struct HomeView: View {
                 .environmentObject(viewModel)
         }
         .fullScreenCover(isPresented: $showSearchScreen, content: {
-            SearchFlightView(isSheetPresented: $showSearchScreen) { flightId, flightNumber in
-                viewModel.getFlightData(id: flightId, flightNumber: flightNumber)
+            SearchFlightView(isSheetPresented: $showSearchScreen) { cellType, id, flightNumber in
+                if cellType == .airport {
+                    self.airportCode = id
+                    goToAirportView.toggle()
+                }
+                else {
+                    viewModel.getFlightData(id: id, flightNumber: flightNumber)
+                }
             }
         })
     }

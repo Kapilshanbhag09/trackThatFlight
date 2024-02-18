@@ -10,6 +10,7 @@ import Foundation
 class SearchFlightViewModel: ObservableObject {
     @Published var searchQuery: String = ""
     @Published var searchResult: [SearchFlightResultModel] = []
+    @Published var searchAirportResult: [SearchFlightResultModel] = []
     @Published var flightName: String = ""
     var count: Int = 0
     
@@ -28,9 +29,11 @@ class SearchFlightViewModel: ObservableObject {
     func filterLiveResult(result: [SearchFlightResultModel]?) {
         guard let result = result else {return}
         DispatchQueue.main.async { [weak self] in
-            self?.searchResult = result.compactMap({$0.type == "live" ? $0 : nil})
+            self?.searchResult = result.compactMap({$0.type == SearchType.live.rawValue ? $0 : nil})
+            self?.searchAirportResult = result.compactMap({$0.type == SearchType.airport.rawValue ? $0 : nil})
             self?.count = self?.searchResult.count ?? 0
             print(self?.searchResult)
+            print(self?.searchAirportResult)
         }
         
     }
