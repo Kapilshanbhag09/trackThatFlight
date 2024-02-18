@@ -8,9 +8,27 @@
 import SwiftUI
 
 struct AirportDetailView: View {
-    var airportCode: String
+    @ObservedObject var viewModel: AirportDetailViewModel
+    
+    init(airportCode: String) {
+        self.viewModel = AirportDetailViewModel(airportCode: airportCode)
+    }
     var body: some View {
-        Text(airportCode)
+        ScrollView {
+            VStack(alignment: .leading) {
+                Text(viewModel.airportDetails.airport?.name ?? "")
+                    .padding(.horizontal, 16.0)
+                
+                HStack {
+                    Spacer()
+                }
+                Spacer()
+            }
+        }
+        .navigationTitle(viewModel.airportCode)
+        .onAppear {
+            viewModel.getAirportDetail()
+        }
     }
 }
 

@@ -30,6 +30,9 @@
 		36CBFA372B82046A003F3619 /* MyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CBFA362B82046A003F3619 /* MyMapView.swift */; };
 		36CBFA3A2B820FCF003F3619 /* SearchFlightTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CBFA392B820FCF003F3619 /* SearchFlightTextField.swift */; };
 		36CBFA3D2B8245E0003F3619 /* AirportDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CBFA3C2B8245E0003F3619 /* AirportDetailView.swift */; };
+		36CBFA3F2B8248BC003F3619 /* AirportDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CBFA3E2B8248BC003F3619 /* AirportDetailViewModel.swift */; };
+		36CBFA412B824EB3003F3619 /* AirportDetailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CBFA402B824EB3003F3619 /* AirportDetailRequest.swift */; };
+		36CBFA432B824F05003F3619 /* AirportDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CBFA422B824F05003F3619 /* AirportDetailModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +79,9 @@
 		36CBFA362B82046A003F3619 /* MyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapView.swift; sourceTree = "<group>"; };
 		36CBFA392B820FCF003F3619 /* SearchFlightTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightTextField.swift; sourceTree = "<group>"; };
 		36CBFA3C2B8245E0003F3619 /* AirportDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDetailView.swift; sourceTree = "<group>"; };
+		36CBFA3E2B8248BC003F3619 /* AirportDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDetailViewModel.swift; sourceTree = "<group>"; };
+		36CBFA402B824EB3003F3619 /* AirportDetailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDetailRequest.swift; sourceTree = "<group>"; };
+		36CBFA422B824F05003F3619 /* AirportDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDetailModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +233,9 @@
 			isa = PBXGroup;
 			children = (
 				36CBFA3C2B8245E0003F3619 /* AirportDetailView.swift */,
+				36CBFA3E2B8248BC003F3619 /* AirportDetailViewModel.swift */,
+				36CBFA402B824EB3003F3619 /* AirportDetailRequest.swift */,
+				36CBFA422B824F05003F3619 /* AirportDetailModel.swift */,
 			);
 			path = AirportDetails;
 			sourceTree = "<group>";
@@ -373,11 +382,14 @@
 				361B85DF2B81056600BA5B11 /* HomeViewModel.swift in Sources */,
 				36CBFA372B82046A003F3619 /* MyMapView.swift in Sources */,
 				361B859F2B80A2B800BA5B11 /* TrackThatFlightApp.swift in Sources */,
+				36CBFA3F2B8248BC003F3619 /* AirportDetailViewModel.swift in Sources */,
 				361B85E32B81072900BA5B11 /* HomeViewFlightRequest.swift in Sources */,
+				36CBFA412B824EB3003F3619 /* AirportDetailRequest.swift in Sources */,
 				36CBFA3A2B820FCF003F3619 /* SearchFlightTextField.swift in Sources */,
 				361B85E12B81058800BA5B11 /* HomeViewFlightModel.swift in Sources */,
 				361B85D22B80AEF700BA5B11 /* Color.swift in Sources */,
 				361B85D92B80BD3300BA5B11 /* Request.swift in Sources */,
+				36CBFA432B824F05003F3619 /* AirportDetailModel.swift in Sources */,
 				361B85D62B80BC5900BA5B11 /* SearchFlightModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
