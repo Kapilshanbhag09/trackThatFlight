@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		361A7BD22B9A50A200467292 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361A7BD12B9A50A200467292 /* UIImage.swift */; };
+		361A7BD42B9A510700467292 /* SVGKit in Frameworks */ = {isa = PBXBuildFile; productRef = 361A7BD32B9A510700467292 /* SVGKit */; };
+		361A7BD62B9A510700467292 /* SVGKitSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 361A7BD52B9A510700467292 /* SVGKitSwift */; };
 		361B859F2B80A2B800BA5B11 /* TrackThatFlightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361B859E2B80A2B800BA5B11 /* TrackThatFlightApp.swift */; };
 		361B85A12B80A2B800BA5B11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361B85A02B80A2B800BA5B11 /* ContentView.swift */; };
 		361B85A32B80A2BA00BA5B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 361B85A22B80A2BA00BA5B11 /* Assets.xcassets */; };
@@ -53,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		361A7BD12B9A50A200467292 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		361B859B2B80A2B800BA5B11 /* TrackThatFlight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackThatFlight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		361B859E2B80A2B800BA5B11 /* TrackThatFlightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackThatFlightApp.swift; sourceTree = "<group>"; };
 		361B85A02B80A2B800BA5B11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				361A7BD62B9A510700467292 /* SVGKitSwift in Frameworks */,
+				361A7BD42B9A510700467292 /* SVGKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +115,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		361A7BD02B9A509100467292 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				361A7BD12B9A50A200467292 /* UIImage.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		361B85922B80A2B800BA5B11 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +146,7 @@
 		361B859D2B80A2B800BA5B11 /* TrackThatFlight */ = {
 			isa = PBXGroup;
 			children = (
+				361A7BD02B9A509100467292 /* Extension */,
 				36CBFA3B2B8245CD003F3619 /* AirportDetails */,
 				36CBFA382B820FBE003F3619 /* Common */,
 				36CBFA352B820459003F3619 /* MapView */,
@@ -256,6 +271,10 @@
 			dependencies = (
 			);
 			name = TrackThatFlight;
+			packageProductDependencies = (
+				361A7BD32B9A510700467292 /* SVGKit */,
+				361A7BD52B9A510700467292 /* SVGKitSwift */,
+			);
 			productName = TrackThatFlight;
 			productReference = 361B859B2B80A2B800BA5B11 /* TrackThatFlight.app */;
 			productType = "com.apple.product-type.application";
@@ -328,6 +347,9 @@
 				Base,
 			);
 			mainGroup = 361B85922B80A2B800BA5B11;
+			packageReferences = (
+				361A7BCF2B9A508000467292 /* XCRemoteSwiftPackageReference "SVGKit" */,
+			);
 			productRefGroup = 361B859C2B80A2B800BA5B11 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -371,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				361B85CD2B80A32A00BA5B11 /* SearchFlightView.swift in Sources */,
+				361A7BD22B9A50A200467292 /* UIImage.swift in Sources */,
 				361B85DD2B80BF9600BA5B11 /* SearchFlightRequest.swift in Sources */,
 				361B85CA2B80A2F900BA5B11 /* HomeView.swift in Sources */,
 				361B85CF2B80AC9C00BA5B11 /* SearchFlightCellView.swift in Sources */,
@@ -724,6 +747,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		361A7BCF2B9A508000467292 /* XCRemoteSwiftPackageReference "SVGKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SVGKit/SVGKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		361A7BD32B9A510700467292 /* SVGKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 361A7BCF2B9A508000467292 /* XCRemoteSwiftPackageReference "SVGKit" */;
+			productName = SVGKit;
+		};
+		361A7BD52B9A510700467292 /* SVGKitSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 361A7BCF2B9A508000467292 /* XCRemoteSwiftPackageReference "SVGKit" */;
+			productName = SVGKitSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 361B85932B80A2B800BA5B11 /* Project object */;
 }

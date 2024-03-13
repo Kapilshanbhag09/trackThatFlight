@@ -20,8 +20,10 @@ class AirportDetailViewModel: ObservableObject {
         let request = AirportDetailRequest(airportCode: self.airportCode)
         
         NetworkCall.loadRequest(AirportDetailResponseModel.self, request: request) {data, error in
-            guard let data = data?.data else {return}
-            self.airportDetails = data
+            DispatchQueue.main.async {
+                guard let data = data?.data else {return}
+                self.airportDetails = data
+            }
         }
     }
 }
