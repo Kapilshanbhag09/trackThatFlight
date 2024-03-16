@@ -30,6 +30,28 @@ struct MyMapView: UIViewRepresentable {
         func mapView(_ mapView: MKMapView, regionWillChangeAnimated animated: Bool) {
             print("REgion changed")
         }
+        
+        func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+            let annotationView = MKAnnotationView()
+            annotationView.annotation = annotation
+            
+            let colorsConfig = UIImage.SymbolConfiguration(paletteColors: [.orange, .orange])
+            let sizeConfig = UIImage.SymbolConfiguration(pointSize: 24, weight: .semibold)
+            
+            
+            let airplaneImage = UIImage(systemName: "airplane", withConfiguration: colorsConfig.applying(sizeConfig))
+            
+            annotationView.image = airplaneImage
+            
+            //Rotate the view
+            let angle = 100.0
+            let radians = angle / 180.0 * CGFloat.pi
+            let rotation = CGAffineTransformRotate(annotationView.transform, radians);
+            annotationView.transform = rotation
+            
+            
+            return annotationView
+        }
     }
 
     func makeCoordinator() -> Coordinator {
@@ -41,7 +63,7 @@ struct MyMapView: UIViewRepresentable {
         let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
         let region = MKCoordinateRegion(center: location, span: span)
         mapView.setRegion(region, animated: true)
-        
+        mapView.isRotateEnabled = false
         return mapView
     }
 
@@ -53,6 +75,10 @@ struct MyMapView: UIViewRepresentable {
         mapView.delegate = context.coordinator
         mapView.setRegion(region, animated: true)
         
-//        mapView.addOverlay(polyline)
+        let london = MKPointAnnotation()
+        london.title = "London"
+        london.coordinate = location
+        
+        mapView.addAnnotation(london)
     }
 }
